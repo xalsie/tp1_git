@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+
+# Editor directories and files
+.vscode/
+
+# Temporary files
+*.tmp
+
+# NPM
+npm-debug.log*
