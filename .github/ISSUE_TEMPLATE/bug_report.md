@@ -1,38 +1,38 @@
-## Description du problème
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
-[Veuillez décrire le problème de manière claire et concise. Incluez des détails pertinents tels que les messages d'erreur, les comportements inattendus, les captures d'écran, etc.]
+---
 
-## Étapes pour reproduire
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-[Veuillez fournir des étapes claires et précises pour reproduire le problème. Cela permettra aux autres utilisateurs de tester le problème et de confirmer qu'il s'agit bien d'un bug.]
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-Aller à ... \
-Cliquer sur ... \
-Entrer ... \
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-## Comportement attendu
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
-[Veuillez décrire le comportement qui devrait se produire lorsque le problème ne survient pas.]
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
-## Comportement observé
-
-[Veuillez décrire le comportement réel que vous avez observé lorsque le problème s'est produit.]
-
-## Environnement
-
-[Veuillez fournir des informations sur votre environnement, telles que la version du système d'exploitation, la version de l'application, les versions des dépendances, etc.]
-
-Système d'exploitation: \
-Version de l'application: \
-Autres informations: \
-Contexte supplémentaire \
-[Veuillez fournir tout autre contexte supplémentaire qui pourrait aider à comprendre le problème, comme les étapes précédentes ou les informations sur le matériel utilisé.]
-
-## Solutions proposées
-
-[Veuillez proposer des solutions ou des suggestions pour résoudre le problème.]
-
-Solution proposée 1: \
-Solution proposée 2:
-...
+**Additional context**
+Add any other context about the problem here.
