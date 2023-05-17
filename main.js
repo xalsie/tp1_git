@@ -1,12 +1,7 @@
-
-
-
 console.log('one');
 var ww = 'production';
 if (ww === 'production') {
-  consle.log('Another one');
+	console.log('Another one');
 } else {
-
-
- console.log('test');
+	console.log('test');
 }

@@ -4,7 +4,9 @@
   "description": "This is a simple web messenger light with Socket.IO.",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "node main.js",
+    "lint": "eslint --fix .",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,10 @@
     "path": "^0.12.7",
     "socket.io": "^4.6.1",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "8.8.0",
+    "prettier": "2.8.8"
   }
 }
