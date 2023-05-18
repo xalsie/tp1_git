@@ -4,11 +4,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Install modules
-      run: yarn install eslint
+      run: npm i eslint
     - name: Run ESLint
-      with:
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx
-        rules-path: './.eslintrc.json'
-        setup-from-package-json: 'true'
+      run: npx eslint --config ./.eslintrc.json . --fix
