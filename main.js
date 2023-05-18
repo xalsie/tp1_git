@@ -1,6 +1,7 @@
 // ###################################################################################
 // ## START IMPORT
 // ## Library
+import compression from 'compression';
 import express from 'express';
 import session from 'express-session';
 import fs from 'fs';
@@ -21,12 +22,25 @@ const io = new Server(server);
 const urlApp = '/';
 const port = 20038;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const shouldCompress = (req, res) => {
+	if (req.headers['x-no-compression']) {
+		return false;
+	}
+	return compression.filter(req, res);
+};
 
 app.use(
 	session({
 		secret: '001/011100110110010101100011011100100110010101110100',
 		resave: true,
 		saveUninitialized: true,
+	})
+);
+app.use(
+	compression({
+		// Compress all HTTP responses
+		filter: shouldCompress,
+		threshold: 0,
 	})
 );
 app.use(express.urlencoded({ extended: true }));
