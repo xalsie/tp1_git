@@ -6,6 +6,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install modules
-      run: yarn install --dev
+      run: yarn install eslint
     - name: Run ESLint
-      run: eslint . --ext .js,.jsx,.ts,.tsx
+      with:
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx
+        rules-path: './.eslintrc.json'
+        setup-from-package-json: 'true'
